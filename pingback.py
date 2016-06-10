@@ -1,4 +1,4 @@
-# Part of aqua
+# Part of Aqua for education only 
 class Thread1(threading.Thread):
         def __init__(self, url, number, blog):
                 self.url = url
@@ -24,5 +24,5 @@ class Thread1(threading.Thread):
                                         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.SOL_TCP)
                                         s.connect((self.blog_cleaned1, 80))
                                         s.send(request)
-                                        print"Thread %s | Blog %s"%(self.number, self.blog_cleaned1)
+                                        
            
